@@ -7,6 +7,7 @@ html, body {
                             margin: 0;
                             font-family: fontPlay;
                             text-align: center;
+                            font-family:Roboto;
 }
 
 #equalizerContainer {       background-color: #545454;
@@ -34,9 +35,15 @@ h1,h2,h3   {
                             padding-top: 10px;
 }
 
+p {
+  margin:0px 0px 5px 0px;
+
+
+}
+
 
 .title {
-                            background-color: white;
+                            background-color: #2D2C2A;
                             font-size: 8em;
                             vertical-align: middle;
                             text-align:center;
@@ -46,6 +53,7 @@ h1,h2,h3   {
 
     .title #name {
                             text-align: center;
+                            color:fff;
     }
 
 #logo {
@@ -97,7 +105,7 @@ h1,h2,h3   {
 
 
 .divider {
-                            background-color: #819847;
+                            background-color: #2D2C2A;
                             min-height: 50px;
 }
 
@@ -107,8 +115,7 @@ h1,h2,h3   {
 }
 
 .contents {
-                            background-color: white;
-                            display: inline;
+                            background-color:#2D2C2A;
     
 }
 
@@ -134,13 +141,14 @@ h1,h2,h3   {
         }
 
     #info {
-                            margin: 25px 0 25px 0;
-                            background-color: #DFE0DD;
+                            /*margin: 25px 0 25px 0;*/
+                            background-color: #2D2C2A;
                             padding: 25px 0 25px 0;
+                            min-height:100px;
     }
 
 .subContent {
-                            background-color: #5A534D;
+                            background-color: #2D2C2A;
                             min-height: 15%;
                             font-size: 55px;
                            
@@ -185,6 +193,92 @@ h1,h2,h3   {
     
 
 }
+
+
+
+/*---RADIO SCHEDULE CSS BEGINS---*/
+
+.main-title {
+    text-transform: uppercase;
+    color:fff;
+    font-size:23;
+    height:1px;
+    background:#808284;
+    border-bottom:1px solid #808284;
+    float:left;
+
+}
+
+
+
+.radio-schedule {  
+    float:left;
+    width:1020px;
+    overflow:auto;
+
+}
+
+.column {
+ width:340px;
+ float:left;
+
+}
+
+.schedule-content {
+    padding:5px;
+    width:300px;
+    height:68px;
+    margin:10px 0px 10px 0px;
+}
+
+
+.line-separator{
+    height:1px;
+    background:#989C8B;
+    border-bottom:1px solid #989C8B;
+    margin-top:60px;
+
+}
+
+.schedule-info-left {
+    float:left;
+    width:57px;
+    text-align:left;
+}
+
+.schedule-time{
+      color:#999D8C;
+      font-size:17px;
+      letter-spacing: 2px;
+}
+
+.schedule-date {
+  text-transform:uppercase;
+  color:#999D8C;
+  font-size:11px;
+}
+
+.schedule-info-right{
+    float:right;
+    width:210px;
+    text-align:left;
+} 
+
+.schedule-title{
+  text-transform:uppercase;
+  color:fff;
+  font-size:17px;
+}
+
+.schedule-name{
+  text-transform:uppercase;
+  color:#999D8C;
+  font-size:11px;
+}
+
+
+
+/*---RADIO SCHEDULE CSS ENDS---*/
 
 
 
