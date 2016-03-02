@@ -1,0 +1,292 @@
+﻿/*@green: #819847;
+@grey: #545454;*/
+
+html, body {
+                            /*background-color: #DFE0DD;*/
+                            padding: 0;
+                            margin: 0;
+                            font-family: fontPlay;
+                            text-align: center;
+}
+
+#equalizerContainer {       background-color: #545454;
+    
+
+}
+
+#equalizer {                margin: 5px 0px 25px 17.5%;
+                            /*margin-left: 175px;*/
+    
+
+
+}
+
+
+.row-fluid {
+                            margin-left: 0;
+                            margin-right: 0;
+                            display: block;
+                          /*min-height:300px;*/
+}
+
+h1,h2,h3   {
+                            margin: 0 0 0 0;
+                            padding-top: 10px;
+}
+
+
+.title {
+                            background-color: white;
+                            font-size: 8em;
+                            vertical-align: middle;
+                            text-align:center;
+                            padding-bottom: 1.5%;
+                            margin: 0 auto;
+}
+
+    .title #name {
+                            text-align: center;
+    }
+
+#logo {
+                            padding-bottom: 15px;
+}
+
+
+.player {
+                            background-color: #5A534D;
+                            min-height: 300px;
+
+}
+
+    .player #equalizerPlaceHolder {
+                            margin: 0 auto;
+
+    }
+
+    .controls button {
+        border: none;
+        outline: 0;
+        
+    }
+
+.play {
+    min-height: 128px;
+    min-width: 128px;
+    background: url(../img/player/play.png);
+}
+
+.pause {
+    min-height: 128px;
+    min-width: 128px;
+    background: url(../img/player/pause.png);
+}
+
+.mute {
+    min-height: 128px;
+    min-width: 128px;
+    background: url(../img/player/mute.png);
+}
+
+.unmute {
+    min-height: 128px;
+    min-width: 128px;
+    background: url(../img/player/unmute.png);
+}
+
+
+
+.divider {
+                            background-color: #819847;
+                            min-height: 50px;
+}
+
+.wave #greenWave {
+                            min-height: 30px;
+                            background: url(../img/layout/greenWave.png);
+}
+
+.contents {
+                            background-color: white;
+                            display: inline;
+    
+}
+
+    .contents h1 {
+                            text-align: center;
+                            
+                            font-size: 65px
+    }
+
+        .contents h1 #listening {
+                            color: #819847;
+                            margin-top: 30px;
+        }
+
+        .contents h1 #hits {
+                            color: #5A534D;
+        }
+
+        .contents h1 #uk {
+                            color: @green;
+                            font-size: 72px;
+                            margin-bottom: 55px;
+        }
+
+    #info {
+                            margin: 25px 0 25px 0;
+                            background-color: #DFE0DD;
+                            padding: 25px 0 25px 0;
+    }
+
+.subContent {
+                            background-color: #5A534D;
+                            min-height: 15%;
+                            font-size: 55px;
+                           
+                            color: white;
+
+}
+
+    #details {              background: url(../img/top-40-bg.jpg) 100% -200% ;
+                            padding: 100px 10px 100px 10px;
+                            min-height: 450px;
+                            text-align: center;
+                            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+.schedule {                 margin: 35px 0 50px 0;                         
+                            text-align: center;
+
+}
+
+    #scheduleHeader {       font-size: 55px;
+                            
+        
+    }
+
+    #scheduleTimes {        font-size: 45px;
+        
+    }
+
+#messagingContact {         margin-top: 25px;      
+                            padding-top: 25px;   
+}
+
+    #contactText {          background-color: none;
+        font-size: 20px;
+    
+    }
+
+#map {                      background: url(../img/map.png) no-repeat;
+                            min-height: 500px;
+                            text-align: left;
+    
+
+}
+
+
+
+
+.fontPacifico {
+                            font-family: 'Pacifico', serif;
+}
+
+
+.fontPlay {
+                            font-family: 'Play', sans-serif;
+}
+
+#songtitle {
+    color: white;
+}
+
+
+
+#firechat-container {
+    position: fixed;
+    bottom: 0;
+    right: 10;
+  height: 475px;
+  max-width: 425px;
+    min-width: 375px;
+  padding: 11px;
+  border: 1px solid #ccc;
+  background-color: #2d2c2a;
+    color: #fff;
+  margin: auto auto;
+  text-align: center;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 5px 25px #fff;
+     -moz-box-shadow: 0 5px 25px #fff;
+          box-shadow: 0 5px 25px #fff;
+}
+
+#firechat .chat {
+    background-color: #2d2c2a;
+    border: none;
+}
+
+#firechat .message:nth-child(odd) {
+    background-color: #3a3a39;
+}
+
+#firechat .message.message-self {
+    color: #999d8c;
+}
+
+#firechat .firechat-dropdown-toggle.btn {
+    padding: 2px 0 0;
+}
+/*
+#firechat #firechat-btn-rooms {
+    display: none;
+}
+
+#firechat #firechat-tab-list {
+    display: none;
+}*/
+
+
+
+#auth-modal {
+    width: 30%;
+    margin: 0 auto;
+    background-color: white;
+    height: 28%;
+}
+
+#user-info {
+  display: block;
+  margin-top: 10px;
+}
+
+#user-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-container {
+  padding: 10px 0;
+  color: #5e5e5e;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
+}
+.social-buttons {
+  margin-top: 2px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.social-buttons li {
+  display: inline-block;
+  padding: 6px 8px 5px;
+  line-height: 1;
+  *display: inline;
+  *zoom: 1;
+}
