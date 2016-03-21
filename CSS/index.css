@@ -16,6 +16,7 @@ html, body {
 }
 
 #equalizer {                margin: 5px 0px 25px 17.5%;
+                            opacity: 0.3;
                             /*margin-left: 175px;*/
     
 
@@ -288,29 +289,36 @@ p {
 
 .about {
     float:left;
-    width:1020px;
+    width:1055px;
     overflow:auto;
+
+}
+
+.column-about {
+ width:527px;
+ float:left;
 
 }
 
 .about-content {
     padding:5px;
     width:1020px;
-    height:130px;
+    height:180px;
     margin:10px 0px 10px 0px;
     text-align:left;
 
 }
 
-.about.info.left{
+.about-info-left{
   float:left;
   width:131px;
 }
 
-.about-info.right {
-  float:right;
+.about-info-right {
+  float:left;
   width:285px;
   text-align:left;
+  margin-left:35px;
 
 }
 
@@ -331,7 +339,34 @@ p {
 .about-info {
   color:#999D8C;
   font-size:13px;
+  padding: 10px 0px 9px 0px;
 
+}
+
+.readmore {
+  color:#999D8C;
+  font-size:16px;
+  text-transform:uppercase;
+}
+
+a:link {
+    text-decoration: none;
+    color:#999D8C;
+}
+
+a:visited {
+    text-decoration: none;
+    color:#999D8C;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#999D8C;
+}
+
+a:active {
+    text-decoration: underline;
+    color:#999D8C;
 }
 
 
@@ -384,10 +419,17 @@ p {
 
 #firechat .message:nth-child(odd) {
     background-color: #3a3a39;
+    color:#fff;
 }
 
+
+#firechat .message:nth-child(even) {
+    color:#fff;
+}
+
+
 #firechat .message.message-self {
-    color: #999d8c;
+    color: #fff;
 }
 
 #firechat .firechat-dropdown-toggle.btn {
