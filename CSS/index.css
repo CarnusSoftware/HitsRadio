@@ -302,7 +302,7 @@ p {
 
 .about-content {
     padding:5px;
-    width:1020px;
+    /*width:1020px;*/
     height:180px;
     margin:10px 0px 10px 0px;
     text-align:left;
