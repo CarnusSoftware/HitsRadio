@@ -10,10 +10,24 @@ html, body {
                             font-family:Roboto;
 }
 
-#equalizerContainer {       background-color: #545454;
+#equalizerContainer {       background-color: #2D2C2A;
+                            background-image: url("../img/header-bg-2.png");
+                            min-height: 611px;
+                            width: auto;
+                            height: auto;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            /*background-attachment: fixed;*/
+                            background-size: cover;
+
     
 
 }
+
+/*img {
+    width: 100%;
+    height: auto;
+}*/
 
 #equalizer {                margin: 5px 0px 25px 17.5%;
                             opacity: 0.3;
@@ -44,7 +58,6 @@ p {
 
 
 .title {
-                            background-color: #2D2C2A;
                             font-size: 8em;
                             vertical-align: middle;
                             text-align:center;
@@ -59,6 +72,7 @@ p {
 
 #logo {
                             padding-bottom: 15px;
+                            padding-top: 20px;
 }
 
 
@@ -80,8 +94,8 @@ p {
     }
 
 .play {
-    min-height: 128px;
-    min-width: 128px;
+    min-height: 21px;
+    min-width: 24px;
     background: url(../img/player/play.png);
 }
 
@@ -98,15 +112,15 @@ p {
 }
 
 .unmute {
-    min-height: 128px;
-    min-width: 128px;
+    min-height: 30px;
+    min-width: 37px;
     background: url(../img/player/unmute.png);
 }
 
 
 
 .divider {
-                            background-color: #2D2C2A;
+                            /*background-color: #2D2C2A;*/
                             min-height: 50px;
 }
 
@@ -220,6 +234,7 @@ p {
     float:left;
     width:1020px;
     overflow:auto;
+    margin-bottom: 30px;
 
 }
 
