@@ -19,7 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js" type="text/javascript"></script>
     <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
     <script src='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js'></script>
-    <script src="js/controller.js" type="text/javascript"></script>
     <script src="components/less/less-1.7.1.min.js"></script>
 
     <!-- Import Fonts -->
@@ -40,13 +39,6 @@
                     <button id="play_pause" class="pause" onclick="play_pause()"></button>
                     <button id="mute_unmute" class="mute" onclick="mute_unmute()"></button>
                     <br/>
-                    <!--
-                    <script>
-                      // MixStream Flash Player, http://mixstreamflashplayer.net/
-                      var flashvars = {};flashvars.serverHost = "176.31.248.14:15574/;";flashvars.getStats = "1";flashvars.autoStart = "1";flashvars.textColour = "";flashvars.buttonColour = "";var params = {};params.bgcolor= "";params.wmode="transparent";
-                    </script>
-                    <script type="text/javascript" src="http://mixstreamflashplayer.net/v1.3.js"></script>
-                    -->
                 </div>
                 <script>
                     function play_pause() {
@@ -74,6 +66,20 @@
                             myAudio.muted = !myAudio.muted;
                         }
                     }
+                    
+                    var level = "max"
+                    function min_max() {
+                        if (level === "max") {
+                            document.getElementById("firechat-wrapper").style.bottom = "-440";
+                            level = "min";
+                        } else {
+                           document.getElementById("firechat-wrapper").style.bottom = "0";
+                           level = "max";
+                        }
+                        
+                    }
+                        
+                        
 
                     
                 </script>    
@@ -406,47 +412,13 @@
                 </div>
             </div>
         </div>
-        <!--<div class="row-fluid">
-            <div class="subContent">
-                <div id="details">
-                    <div class="container" >
-                        <span class="fontPlay">INTERNET ONLY HIT MUSIC STATION PLAYING UKS TOP 40 FROM LAST 10 YEARS</span>
-                    
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!--<div class="wave" id="greenWave"></div>
-        <div class="row-fluid">
-            <div class="divider">
-                <div class="container">
-                    <div class="schedule">
-                        <h1 class="fontPacifico" id="scheduleHeader">Live Broadcasts</h1>
-                        <h2 class="fontPacifico" id="scheduleTimes">Tuesday 9pm -> 1am and Friday 9pm -> 2am</h2>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!--<div class="row-fluid">
-            <div class="contents">
-                <div class="container" id="map">
-                    <h2>About Us</h2>
-                   
-                </div>
-                
-            </div>
-        </div>-->
-        <!--<div class="row-fluid">
-            <div class="subContent" id="messagingContact">
-                <div class="container">
-                    <h2 id="">Connect With Us</h2>
-                    <p id="contactText">rx73m space and your message to 60777<br/>*** text service is restricted to the U.K. ***</p>
-                </div>
-            </div>
-        </div>-->
-    <div id='firechat-container' class="clearfix">
-        <div id="firechat-header"></div>
-        <div id="firechat-logout"></div>
+
+    <div id="firechat-wrapper">
+        <button id="firechat-minmax" onclick="min_max()">__</button>
+        <div id='firechat-container' class="clearfix">
+            <div id="firechat-header"></div>
+            <div id="firechat-logout"></div>
+        </div>
     </div>
     <div id="auth-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-header">
