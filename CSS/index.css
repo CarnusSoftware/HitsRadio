@@ -28,12 +28,11 @@ html, body {
 
 }
 
-/*img {
-    width: 100%;
-    height: auto;
-}*/
 
 #equalizer {                margin: 5px 0px 25px 12.5%;
+=======
+#equalizer {                margin: 5px 0px 25px 17.5%;
+>>>>>>> origin/master
                             opacity: 0.3;
                             /*margin-left: 175px;*/
     
@@ -474,27 +473,37 @@ a:active {
     color: white;
 }
 
-
-
-#firechat-container {
+#firechat-wrapper {
+    height: 475px;
     position: fixed;
     bottom: 0;
     right: 10;
-  height: 475px;
-  max-width: 425px;
-    min-width: 375px;
-  padding: 11px;
-  border: 1px solid #ccc;
-  background-color: #2d2c2a;
+    width: 375px;
+    padding: 11px;
+}
+
+#firechat-minmax {
+    height: 20px;
+    background-color: #3a3a39;
+    width: 100%;
+    border: none;
+    text-align: right;
+    color: white;
+    font-weight: bolder;
+}
+
+#firechat-container {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #2d2c2a;
     color: #fff;
-  margin: auto auto;
-  text-align: center;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-  -webkit-box-shadow: 0 5px 25px #fff;
-     -moz-box-shadow: 0 5px 25px #fff;
-          box-shadow: 0 5px 25px #fff;
+    margin: auto auto;
+    text-align: center;
+    /*-webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+          border-radius: 4px;*/
+
 }
 
 #firechat .chat {
@@ -520,15 +529,6 @@ a:active {
 #firechat .firechat-dropdown-toggle.btn {
     padding: 2px 0 0;
 }
-/*
-#firechat #firechat-btn-rooms {
-    display: none;
-}
-
-#firechat #firechat-tab-list {
-    display: none;
-}*/
-
 
 
 #auth-modal {

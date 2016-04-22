@@ -10,3 +10,10 @@ D:\Users\plangman\Dropbox\Documents\Carnus\Clients\Hits Radio\HitsRadio\obj\Debu
 D:\Users\plangman\Dropbox\Documents\Carnus\Clients\Hits Radio\HitsRadio\bin\dotless.Core.dll
 D:\Users\plangman\Dropbox\Documents\Carnus\Clients\Hits Radio\HitsRadio\obj\Debug\HitsRadio.csprojResolveAssemblyReference.cache
 D:\Users\plangman\Dropbox\Documents\Carnus\Clients\Hits Radio\HitsRadio\bin\HitsRadio.dll.config
+C:\Carnus\HitsRadio\bin\HitsRadio.dll.config
+C:\Carnus\HitsRadio\bin\HitsRadio.dll
+C:\Carnus\HitsRadio\bin\HitsRadio.pdb
+C:\Carnus\HitsRadio\bin\dotless.Core.dll
+C:\Carnus\HitsRadio\obj\Debug\HitsRadio.csprojResolveAssemblyReference.cache
+C:\Carnus\HitsRadio\obj\Debug\HitsRadio.dll
+C:\Carnus\HitsRadio\obj\Debug\HitsRadio.pdb
