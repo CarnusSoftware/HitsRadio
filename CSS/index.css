@@ -10,6 +10,10 @@ html, body {
                             font-family:Roboto;
 }
 
+.container {
+  width:1000px;
+}
+
 #equalizerContainer {       background-color: #2D2C2A;
                             background-image: url("../img/header-bg-2.png");
                             min-height: 611px;
@@ -29,7 +33,7 @@ html, body {
     height: auto;
 }*/
 
-#equalizer {                margin: 5px 0px 25px 17.5%;
+#equalizer {                margin: 5px 0px 25px 12.5%;
                             opacity: 0.3;
                             /*margin-left: 175px;*/
     
@@ -71,7 +75,6 @@ p {
     }
 
 #logo {
-                            padding-bottom: 15px;
                             padding-top: 20px;
 }
 
@@ -93,28 +96,37 @@ p {
         
     }
 
+    .controls {
+      height:30px;
+
+    }
+
 .play {
-    min-height: 21px;
-    min-width: 24px;
+    min-height: 50px;
+    min-width: 50px;
     background: url(../img/player/play.png);
+    background-repeat: no-repeat;
 }
 
 .pause {
-    min-height: 128px;
-    min-width: 128px;
+    min-height: 50px;
+    min-width: 50px;
     background: url(../img/player/pause.png);
+    background-repeat: no-repeat;
 }
 
 .mute {
-    min-height: 128px;
-    min-width: 128px;
+    min-height: 50px;
+    min-width: 50px;
     background: url(../img/player/mute.png);
+    background-repeat: no-repeat;
 }
 
 .unmute {
-    min-height: 30px;
-    min-width: 37px;
+    min-height: 50px;
+    min-width: 50px;
     background: url(../img/player/unmute.png);
+    background-repeat: no-repeat;
 }
 
 
@@ -140,7 +152,8 @@ p {
         color: fff;
         text-transform: uppercase;
         font-family:roboto;
-        height:55px;
+        /*height:55px;*/
+
         
     }
 
@@ -228,20 +241,28 @@ p {
 
 }
 
+.underline {
+
+    height: 1px;
+    background: #989C8B;
+    border-bottom: 1px solid #989C8B;
+    margin-top: 45px;
+}
+
 
 
 .radio-schedule {  
     float:left;
-    width:1020px;
+    width:1000px;
     overflow:auto;
     margin-bottom: 30px;
 
 }
 
 .column {
- width:340px;
+ width:298px;
  float:left;
-
+ margin-right: 35px;
 }
 
 .schedule-content {
@@ -304,19 +325,20 @@ p {
 
 .about {
     float:left;
-    width:1055px;
+    width:1000px;
     overflow:auto;
 
 }
 
 .column-about {
- width:527px;
+ width:500px;
  float:left;
 
 }
 
 .about-content {
     padding:5px;
+    padding-top: 5%;
     /*width:1020px;*/
     height:180px;
     margin:10px 0px 10px 0px;
@@ -386,9 +408,57 @@ a:active {
 
 
 
-/*---ABOUT THE DJ'S CSS BEGINS---*/
+/*---ABOUT THE DJ'S CSS ENDS---*/
 
+/*CONTACT INFO CSS BEGINS*/
 
+.contact {
+    float:left;
+    width:1000px;
+    overflow:auto;
+
+}
+
+.column-contact {
+ width:500px;
+ float:left;
+
+}
+
+.contact-content {
+    padding:5px;
+    width:1109px;
+    height:180px;
+    margin:10px 0px 10px 0px;
+    text-align:left;
+
+}
+
+.contact-info {
+  color:#fff;
+  font-size:11px;
+}
+
+.contact-info-left{
+  float:left;
+  width:256px;
+}
+
+.contact-info-right {
+  float:right;
+  width:285px;
+  text-align:left;
+  margin-left:35px;
+
+}
+
+.contact-info-right a {
+    float: left;
+    margin-left: 4%;
+
+}
+
+/*CONTACT INFO CSS ENDS*/
 
 
 .fontPacifico {
