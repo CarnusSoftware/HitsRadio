@@ -30,9 +30,8 @@ html, body {
 
 
 #equalizer {                margin: 5px 0px 25px 12.5%;
-=======
-#equalizer {                margin: 5px 0px 25px 17.5%;
->>>>>>> origin/master
+               
+
                             opacity: 0.3;
                             /*margin-left: 175px;*/
     
@@ -415,7 +414,7 @@ a:active {
     float:left;
     width:1000px;
     overflow:auto;
-
+ 
 }
 
 .column-contact {
