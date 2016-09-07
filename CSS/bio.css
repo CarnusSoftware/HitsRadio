@@ -1,0 +1,625 @@
+/*@green: #819847;
+@grey: #545454;*/
+
+html, body {
+                            /*background-color: #DFE0DD;*/
+                            padding: 0;
+                            margin: 0;
+                            font-family: fontPlay;
+                            text-align: center;
+                            font-family:Roboto;
+}
+
+.container {
+  width:1000px;
+}
+
+#equalizerContainer {       background-color: #2D2C2A;
+                            background-image: url("../img/header-bg-2.png");
+                            min-height: 611px;
+                            width: auto;
+                            height: auto;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            /*background-attachment: fixed;*/
+                            background-size: cover;
+
+    
+
+}
+
+
+#equalizer {                margin: 5px 0px 25px 12.5%;
+               
+
+                            opacity: 0.3;
+                            /*margin-left: 175px;*/
+    
+
+
+}
+
+
+.row-fluid {
+                            margin-left: 0;
+                            margin-right: 0;
+                            display: block;
+                          /*min-height:300px;*/
+}
+
+h1,h2,h3   {
+                            margin: 0 0 0 0;
+                            padding-top: 10px;
+}
+
+p {
+  margin:0px 0px 5px 0px;
+  display:inline;
+
+
+}
+
+
+.title {
+                            font-size: 8em;
+                            vertical-align: middle;
+                            text-align:center;
+                            padding-bottom: 1.5%;
+                            margin: 0 auto;
+}
+
+    .title #name {
+                            text-align: center;
+                            color:fff;
+    }
+
+#logo {
+                            padding-top: 20px;
+}
+
+
+.player {
+                            background-color: #5A534D;
+                            min-height: 300px;
+
+}
+
+    .player #equalizerPlaceHolder {
+                            margin: 0 auto;
+
+    }
+
+    .controls button {
+        border: none;
+        outline: 0;
+        
+    }
+
+    .controls {
+      height:30px;
+
+    }
+
+.play {
+    min-height: 50px;
+    min-width: 50px;
+    background: url(../img/player/play.png);
+    background-repeat: no-repeat;
+}
+
+.pause {
+    min-height: 50px;
+    min-width: 50px;
+    background: url(../img/player/pause.png);
+    background-repeat: no-repeat;
+}
+
+.mute {
+    min-height: 51px;
+    min-width: 50px;
+    background: url(../img/player/mute.png);
+    background-repeat: no-repeat;
+}
+
+.unmute {
+    min-height: 51px;
+    min-width: 50px;
+    background: url(../img/player/unmute.png);
+    background-repeat: no-repeat;
+}
+
+
+
+.divider {
+                            /*background-color: #2D2C2A;*/
+                            min-height: 50px;
+}
+
+.wave #greenWave {
+                            min-height: 30px;
+                            background: url(../img/layout/greenWave.png);
+}
+
+.contents {
+                            background-color:#2D2C2A;
+    
+}
+
+    .contents h1 {
+        font-size: 23;
+        float: left;
+        color: fff;
+        text-transform: uppercase;
+        font-family:roboto;
+        /*height:55px;*/
+
+        
+    }
+
+        .contents h1 #listening {
+                            color: #819847;
+                            margin-top: 30px;
+        }
+
+        .contents h1 #hits {
+                            color: #5A534D;
+        }
+
+        .contents h1 #uk {
+                            color: @green;
+                            font-size: 72px;
+                            margin-bottom: 55px;
+        }
+
+    #info {
+                            /*margin: 25px 0 25px 0;*/
+                            background-color: #2D2C2A;
+                            padding: 25px 0 25px 0;
+                            min-height:100px;
+    }
+
+.subContent {
+                            background-color: #2D2C2A;
+                            min-height: 15%;
+                            font-size: 55px;
+                           
+                            color: white;
+
+}
+
+    #details {              background: url(../img/top-40-bg.jpg) 100% -200% ;
+                            padding: 100px 10px 100px 10px;
+                            min-height: 450px;
+                            text-align: center;
+                            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+.schedule {                 margin: 35px 0 50px 0;                         
+                            text-align: center;
+
+}
+
+    #scheduleHeader {       font-size: 55px;
+                            
+        
+    }
+
+    #scheduleTimes {        font-size: 45px;
+        
+    }
+
+#messagingContact {         margin-top: 25px;      
+                            padding-top: 25px;   
+}
+
+    #contactText {          background-color: none;
+        font-size: 20px;
+    
+    }
+
+#map {                      background: url(../img/map.png) no-repeat;
+                            min-height: 500px;
+                            text-align: left;
+    
+
+}
+
+
+
+/*---RADIO SCHEDULE CSS BEGINS---*/
+
+.main-title {
+    text-transform: uppercase;
+    color:fff;
+    font-size:23;
+    height:1px;
+    background:#808284;
+    border-bottom:1px solid #808284;
+    float:left;
+
+}
+
+.underline {
+
+    height: 1px;
+    background: #989C8B;
+    border-bottom: 1px solid #989C8B;
+    margin-top: 45px;
+}
+
+
+
+.radio-schedule {  
+    float:left;
+    width:1000px;
+    overflow:auto;
+    margin-bottom: 30px;
+
+}
+
+.column {
+ width:298px;
+ float:left;
+ margin-right: 35px;
+}
+
+.schedule-content {
+    padding:5px;
+    width:300px;
+    height:68px;
+    margin:10px 0px 10px 0px;
+}
+
+
+.line-separator{
+    height:1px;
+    background:#989C8B;
+    border-bottom:1px solid #989C8B;
+    margin-top:60px;
+
+}
+
+.schedule-info-left {
+    float:left;
+    width:400px;
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.schedule-time{
+      color:#999D8C;
+      font-size:17px;
+      letter-spacing: 3px;
+      margin-left:20px;
+}
+
+.schedule-date {
+  text-transform:uppercase;
+  color:fff;
+  font-size:17px;
+}
+
+.schedule-title{
+  text-transform:uppercase;
+  color:fff;
+  font-size:17px;
+  margin-left:20px;
+}
+
+.schedule-info-left-2{
+    float:left;
+    width:400px;
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.schedule-time-2{
+      color:#999D8C;
+      font-size:17px;
+      letter-spacing: 3px;
+      margin-left:62px;
+}
+
+.schedule-time-3{
+      color:#999D8C;
+      font-size:17px;
+      letter-spacing: 3px;
+      margin-left:35px;
+}
+
+.schedule-time-4{
+      color:#999D8C;
+      font-size:17px;
+      letter-spacing: 3px;
+      margin-left:19px;
+}
+
+.schedule-time-5{
+      color:#999D8C;
+      font-size:17px;
+      letter-spacing: 3px;
+      margin-left:24px;
+}
+
+.schedule-time-6{
+      color:#999D8C;
+      font-size:17px;
+      letter-spacing: 3px;
+      margin-left:40px;
+}
+
+.schedule-info-right{
+    float:right;
+    width:210px;
+    text-align:left;
+} 
+
+.schedule-title{
+  text-transform:uppercase;
+  color:fff;
+  font-size:17px;
+}
+
+.schedule-name{
+  text-transform:uppercase;
+  color:#999D8C;
+  font-size:11px;
+}
+
+
+
+/*---RADIO SCHEDULE CSS ENDS---*/
+
+/*---ABOUT THE DJ'S CSS ENDS---*/
+
+.about {
+    float:left;
+    width:1000px;
+    overflow:auto;
+
+}
+
+.column-about {
+ width:500px;
+ float:left;
+
+}
+
+.about-content {
+    padding:5px;
+    padding-top: 5%;
+    width:980px;
+    height:180px;
+    margin:10px 0px 10px 0px;
+    text-align:left;
+
+}
+
+.about-info-left{
+  float:left;
+  /*width:131px;*/
+}
+
+.about-info-right {
+  float:left;
+  width:650px;
+  text-align:left;
+  margin-left:35px;
+
+}
+
+.about-name {
+  text-transform:uppercase;
+  color:#fff;
+  font-size:17px;
+
+}
+
+.about-country {
+  text-transform:uppercase;
+  color:#999D8C;
+  font-size:11px;
+
+}
+
+.about-info {
+  color:#999D8C;
+  font-size:14px;
+  line-height:22px;
+  padding: 10px 0px 9px 0px;
+
+}
+
+.readmore {
+  color:#999D8C;
+  font-size:16px;
+  text-transform:uppercase;
+}
+
+a:link {
+    text-decoration: none;
+    color:#999D8C;
+}
+
+a:visited {
+    text-decoration: none;
+    color:#999D8C;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#999D8C;
+}
+
+a:active {
+    text-decoration: underline;
+    color:#999D8C;
+}
+
+
+
+/*---ABOUT THE DJ'S CSS ENDS---*/
+
+/*CONTACT INFO CSS BEGINS*/
+
+.contact {
+    float:left;
+    width:1000px;
+    overflow:auto;
+ 
+}
+
+.column-contact {
+ width:500px;
+ float:left;
+
+}
+
+.contact-content {
+    padding:5px;
+    width:1109px;
+    height:180px;
+    margin:10px 0px 10px 0px;
+    text-align:left;
+
+}
+
+.contact-info {
+  color:#fff;
+  font-size:11px;
+}
+
+.contact-info-left{
+  float:left;
+  width:270px;
+}
+
+.contact-info-right {
+  float:right;
+  width:285px;
+  text-align:left;
+  margin-left:35px;
+
+}
+
+.contact-info-right a {
+    float: left;
+    margin-left: 4%;
+
+}
+
+/*CONTACT INFO CSS ENDS*/
+
+
+.fontPacifico {
+                            font-family: 'Pacifico', serif;
+}
+
+
+.fontPlay {
+                            font-family: 'Play', sans-serif;
+}
+
+#songtitle {
+    color: white;
+}
+
+#firechat-wrapper {
+    height: 475px;
+    position: fixed;
+    bottom: 0;
+    right: 10;
+    width: 375px;
+    padding: 11px;
+}
+
+#firechat-minmax {
+    height: 20px;
+    background-color: #3a3a39;
+    width: 100%;
+    border: none;
+    text-align: right;
+    color: white;
+    font-weight: bolder;
+}
+
+#firechat-container {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #2d2c2a;
+    color: #fff;
+    margin: auto auto;
+    text-align: center;
+    /*-webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+          border-radius: 4px;*/
+
+}
+
+#firechat .chat {
+    background-color: #2d2c2a;
+    border: none;
+}
+
+#firechat .message:nth-child(odd) {
+    background-color: #3a3a39;
+    color:#fff;
+}
+
+
+#firechat .message:nth-child(even) {
+    color:#fff;
+}
+
+
+#firechat .message.message-self {
+    color: #fff;
+}
+
+#firechat .firechat-dropdown-toggle.btn {
+    padding: 2px 0 0;
+}
+
+
+#auth-modal {
+    width: 30%;
+    margin: 0 auto;
+    background-color: white;
+    height: 28%;
+}
+
+#user-info {
+  display: block;
+  margin-top: 10px;
+}
+
+#user-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-container {
+  padding: 10px 0;
+  color: #5e5e5e;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
+}
+.social-buttons {
+  margin-top: 2px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.social-buttons li {
+  display: inline-block;
+  padding: 6px 8px 5px;
+  line-height: 1;
+  *display: inline;
+  *zoom: 1;
+}
+.span {overflow:hidden; white-space: nowrap;}
+

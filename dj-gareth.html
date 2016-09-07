@@ -1,0 +1,259 @@
+<html lang="eng" ng-app="hitsRadio">
+<head>
+    <title>Hits Radio</title>
+    <!-- Load Shortcut Icon -->
+    <link href="img/logoSymbol.ico" rel="shortcut icon" />
+
+    <!-- Load Style Sheets -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="components/equalizer/css/jquery.equalizer.css" rel="stylesheet"/>
+    <link href='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css' rel='stylesheet' />
+    <link href="css/bio.css" rel="stylesheet" />
+    
+    <!-- Load Javascript Libraries -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script type="text/javascript" src="components/equalizer/js/jquery.reverseorder.js"></script>
+    <script type="text/javascript" src="components/equalizer/js/jquery.equalizer.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap-modal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js" type="text/javascript"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script src='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js'></script>
+    <script src="components/less/less-1.7.1.min.js"></script>
+
+    <!-- Import Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+    <body>
+        <div class="row-fluid" id="equalizerContainer">
+            <div class="title">
+                <!--<span class="fontPlay" id="name">HITS RADIO</span>
+                <img id="logo" src="img/logoSymbol.png" />-->
+               <a href="index.html"><img id="logo" src="img/hitsRadioLogo.png" /></a>
+            </div>
+             <div class="row-fluid">
+            <div class="divider" id="break">
+                <div class="controls">
+                    <button id="play_pause" class="pause" onclick="play_pause()"></button>
+                    <button id="mute_unmute" class="mute" onclick="mute_unmute()"></button>
+                    <br/>
+                </div>
+                <script>
+                    function play_pause() {
+                        var myAudio = document.getElementById("player");
+                        if (myAudio.paused) {
+                            $('#play_pause').removeClass('play');
+                            $('#play_pause').addClass('pause');
+                            myAudio.play();
+                        } else {
+                            $('#play_pause').removeClass('pause');
+                            $('#play_pause').addClass('play');
+                            myAudio.pause();
+                        }
+                    }
+
+                    function mute_unmute() {
+                        var myAudio = document.getElementById("player");
+                        if (myAudio.muted) {
+                            $('#mute_unmute').removeClass('unmute');
+                            $('#mute_unmute').addClass('mute');
+                            myAudio.muted = !myAudio.muted;
+                        } else {
+                            $('#mute_unmute').removeClass('mute');
+                            $('#mute_unmute').addClass('unmute');
+                            myAudio.muted = !myAudio.muted;
+                        }
+                    }
+                    
+                    var level = "max"
+                    function min_max() {
+                        if (level === "max") {
+                            document.getElementById("firechat-wrapper").style.bottom = "-440";
+                            level = "min";
+                        } else {
+                           document.getElementById("firechat-wrapper").style.bottom = "0";
+                           level = "max";
+                        }
+                        
+                    }
+                        
+                        
+
+                    
+                </script>    
+                
+            </div>
+        </div>
+            <div class="container">
+                <div id="equalizer">
+                    <audio id="player" autoplay>
+                        <source src="http://myradiostream.com/hitsradiolive"/>
+                    </audio>
+                </div>
+            </div>
+        </div>       
+       
+        <div class="row-fluid">
+            <div class="contents" id="info">
+                <div class="container">
+                    
+                    <!--DJ's INFO BEGINS-->
+                    <div class="about">
+                        <h1>Gareth Watts</h1>
+                        <div class="underline"></div>
+                        <div class="column-about">
+                           <div class="about-content">
+                              <div class="about-info-left">
+
+                                <img src="img/garethwatts-large.jpg" width="280px" height=280px;/>
+
+                              </div>
+                              <div class="about-info-right">
+                              
+                                <p class="about-info">I have been interested in music from a very young age and when the time was right I decided to take that love and start doing Disco DJ'ing in pubs and clubs. During those times I met a lot of great people but it was always my dream to work in radio. So in 1996 I followed that dream and started my first internet radio station, Mega 1050 and it's been all go since then. Today I have evolved to this great internet radio station "Hits Radio Live" together with my own two stations called "Hits Radio Mix" and "Hits Radio FM". I now network on Friday nights with Geraint watts on his Friday night show plus on Wednesday nights with my brother (Geraint Watts) and my friend Paul David, together with my own show on Saturday nights from 10pm. Hope you can sign onto our link and give me/us a listen. I look forward to your requests. Just email me on hitsradiomix@gmail.com - Thanks for reading.</p>
+
+                                <div class="schedule-content">
+                                  <div class="schedule-divder">
+                                
+                                   </div>
+                                  <div class="schedule-info-left">
+                               
+                                    <p class="schedule-date">Wednesday</p>
+                        
+                                    <p class="schedule-time">23:00</p>
+
+                                    <p class="schedule-title">Night with the Boys</p>
+
+                                  </div>
+
+                                  <div class="schedule-divder">
+                                
+                                   </div>
+
+                                  <div class="schedule-info-left-2">
+                               
+                                    <p class="schedule-date">Saturday</p>
+                        
+                                    <p class="schedule-time-3">22:00</p>
+
+                                    <p class="schedule-title">Saturday Show</p>
+
+                                  </div>
+                                  
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                    <!--DJ's INFO ENDs--> 
+                    <!--CONTACT INFO BEGINS-->
+                    <div class="contact">
+                        <div class="underline"></div>
+                        <div class="column-contact">
+                           <div class="contact-content">
+                              <div class="contact-info-left">
+                                <p class="contact-info">Copyright &copy; 2016 Hits Radio Live All rights reserved.</p>
+                                <p class="contact-info">Website Designed by: Carnus</p>
+                              </div>
+                              <div class="contact-info-right">
+                                <a href="https://www.facebook.com/hitsradiomix?fref=ts" target="_blank"><img src="img/facebook-icon.png" alt="facebook" style="width:17px;height:35px;border:0;"></a>
+                                <a href="https://twitter.com/hitsradiolive" target="_blank"><img src="img/twitter-icon.png" alt="twitter" style="width:38px;height:32px;border:0;"></a>
+                                <a href="https://twitter.com/hitsradiolive" target="_blank"><img src="img/instagram-icon.png" alt="instagram" style="width:35px;height:35px;border:0;"></a>
+                                 <a href="hitsradio@live.co.uk" target="_blank"><img src="img/email-icon.png" alt="email" style="width:40px;height:27px;border:0;"></a>
+                              </div>
+                           </div>   
+                        </div>    
+                    </div>   
+                    <!--CONTACT INFO ENDS-->      
+                </div>
+            </div>
+        </div>
+
+    <div id="firechat-wrapper">
+        <button id="firechat-minmax" onclick="min_max()">__</button>
+        <div id='firechat-container' class="clearfix">
+            <div id="firechat-header"></div>
+            <div id="firechat-logout"></div>
+        </div>
+    </div>
+    <div id="auth-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 id="myModalLabel">Authenticate to continue</h4>
+        </div>
+        <div class="modal-body text-center">
+            <p>
+                <a id="twitter-signin" href="javascript:login('twitter');">
+                    <img id="twitter-signin-btn" src="img/chat/sign-in-with-twitter.png">
+                </a>
+            </p>
+            <p>
+                <a id="facebook-signin" href="javascript:login('facebook');">
+                    <img id="facebook-signin-btn" src="img/chat/sign-in-with-facebook.png">
+                </a>
+            </p>
+        </div>
+
+    </div>
+    <div id="user-info">
+        Logged in as <span id="user-name">.</span>
+        <a href="javascript:logout();">Logout</a>
+    </div>
+
+        <script type="text/javascript">
+            var chatRef = new Firebase('https://blistering-inferno-820.firebaseio.com/chat'),
+            target = document.getElementById("firechat-container"),
+            authModal = $('#auth-modal').modal({ show: false }),
+            chat = new FirechatUI(chatRef, target);
+
+                chat.on('auth-required', function () {
+                    authModal.modal('show');
+                    return false;
+                });
+
+                chatRef.onAuth(function (authData) {
+                    if (authData) {
+                        var userId = authData.uid,
+                            username = authData[authData.provider].displayName;
+
+                        chat.setUser(userId, username);
+                        $('#user-name').text(username);
+                        $('#user-info').show();
+                        setTimeout(function () {
+                            chat._chat.enterRoom('-KADbx2Mb32hs2ZeRIj5')
+                        }, 500);
+                    } else {
+                        $('#user-info').hide();
+                        chat._chat.enterRoom('-KADbx2Mb32hs2ZeRIj5')
+                    }
+                });
+
+                function login(provider) {
+                    authModal.modal('hide');
+                    chatRef.authWithOAuthPopup(provider, function (error, authData) {
+                        if (error) {
+                            console.log(error);
+                        }
+                    });
+                }
+
+                function logout() {
+                    chatRef.unauth();
+                    location.reload();
+                }
+        </script>
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments);
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-53844733-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>

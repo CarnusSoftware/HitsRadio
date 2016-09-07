@@ -114,14 +114,14 @@ p {
 }
 
 .mute {
-    min-height: 50px;
+    min-height: 51px;
     min-width: 50px;
     background: url(../img/player/mute.png);
     background-repeat: no-repeat;
 }
 
 .unmute {
-    min-height: 50px;
+    min-height: 51px;
     min-width: 50px;
     background: url(../img/player/unmute.png);
     background-repeat: no-repeat;
@@ -568,3 +568,4 @@ a:active {
   *display: inline;
   *zoom: 1;
 }
+
